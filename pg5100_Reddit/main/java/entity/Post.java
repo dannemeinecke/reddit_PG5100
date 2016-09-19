@@ -3,15 +3,19 @@ package entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.validation.constraints.Pattern;
+import java.util.Date;
 
 @Entity
-public class Email {
+public class Post {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    private String emailAddress;
+    private Integer upVote;
+    private Integer downVote;
+
+    private Date createdDate;
+
 
 }
