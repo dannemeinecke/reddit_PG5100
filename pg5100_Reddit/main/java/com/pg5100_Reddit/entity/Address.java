@@ -1,7 +1,6 @@
-package entity;
+package com.pg5100_Reddit.entity;
 
 import javax.persistence.Embeddable;
-import javax.persistence.Id;
 
 @Embeddable
 public class Address {

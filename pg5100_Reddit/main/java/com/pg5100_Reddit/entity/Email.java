@@ -1,21 +1,15 @@
-package entity;
+package com.pg5100_Reddit.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.Date;
 
 @Entity
-public class Post {
+public class Email {
 
     @Id
     @GeneratedValue
     private Long id;
-
-    private Integer upVote;
-    private Integer downVote;
-
-    private Date createdDate;
-
+    private String emailAddress;
 
 }
