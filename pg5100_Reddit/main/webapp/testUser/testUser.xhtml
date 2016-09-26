@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- To use the special tags from JSF, we need to define a namespace, like "h" in this case for the
+     HTML tags specially handled by JSF-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<h:head>
+    <title>Example Create-A-LooserUser</title>
+</h:head>
+<h:body>
+
+    <p>
+        Back to <a href="../index.html">Home</a>
+    </p>
+
+    <h:form id="form">
+
+        <h:commandButton value="create" action="#{userController.createUser}" id="createUser"/>
+        <h:outputText value="#{userController.getUsers}" id="getUser"/>
+
+        <!--
+            Note: all of these tags have an "id": this will turn useful when writing test cases
+            with Selenium (so each tag can be easily identified and accessed)
+        -->
+    </h:form>
+
+</h:body>
+</html>
